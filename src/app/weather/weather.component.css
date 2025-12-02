@@ -1,0 +1,140 @@
+/* Full Page Styling */
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* Center container */
+.container {
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* Heading */
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 25px;
+}
+
+/* Search Bar */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 270px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  padding: 12px 20px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 118, 255, 0.4);
+}
+
+button:hover {
+  background: #005de6;
+}
+
+/* Error Styling */
+.error {
+  color: #ff0033;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Weather Card */
+.card {
+  background: white;
+  width: 340px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Weather icon */
+.weather-icon {
+  width: 140px;
+  margin-top: -20px;
+}
+
+.city-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.temp {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 5px 0;
+  color: #0077ff;
+}
+
+.info {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+/* Loading Spinner */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+  margin: 30px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade In Animation */
+.fade-in {
+  animation: fade 0.8s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
